@@ -83,8 +83,7 @@ public class Hashcodetest {
 
         @Override
         public int hashCode() {
-        	Person person = this;
-        	return person.hashCode();
+        	return this.name.hashCode();
         }
     }
 
