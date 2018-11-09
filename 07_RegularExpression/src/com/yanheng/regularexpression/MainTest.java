@@ -3,13 +3,76 @@ package com.yanheng.regularexpression;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainTest {
 
 	public static void main(String[] args) {
 		System.out.println("hello world !");
-		testString();
+
+		//一つ文字
+		testMatchs("ab","ab");
+		testMatchs("\\","\\\\");
+		testMatchs("\t","\\t");
+		testMatchs("\n","\\n");
+		testMatchs("a",".");
+		testMatchs("0","\\d"); // \\d  ===  [0-9]
+		testMatchs("0","\\w"); // \\w  ===  [a-zA-Z0-9_]
+		testMatchs("\n","\\s"); //スペース
+		testMatchs("\n","\\S"); //非スペース
+		//範囲
+		testMatchs("a","[abc]");
+		testMatchs("d","[^abc]");
+		testMatchs("a","[a-zA-Z]");
+		testMatchs("0","[0-9]");
+		//回数
+		// ? --> 0,1回
+		// + --> 1以上
+		// * --> 0以上
+		// {5} --> 5回
+		// {5,} --> 5回以上
+		// {5,10} --> 5回以上10回以下
+		//ロジック
+		testMatchs("a","a|b|\\n");
+
+
+
+//		testString();
+
+		testPattern();
+		testMatcher();
 	}
+	private static void testMatcher() {
+		String string = "100";
+		String regex = "\\d+";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(string);
+		System.out.println(matcher.matches());
+
+		System.out.println(string.matches(regex));
+
+	}
+	private static void testPattern() {
+		String string = "fa45fs45fs4fs4f5s4f5s4f5s4f5s4f5sr8e7r8";
+		String regex = "[^a-zA-Z]+";
+		Pattern pattern = Pattern.compile(regex);
+
+		System.out.println(Arrays.toString(pattern.split(string)));
+
+		System.out.println(Arrays.toString(string.split(regex)));
+	}
+	private static void testMatchs(String target , String pattern) {
+		System.out.println(target+"  matches  "+pattern+" --> " +target.matches(pattern));
+	}
+	/*
+
+	  a   --> a
+	 //   --> /
+
+
+
+	 */
 
 
 	private static void testString() {
@@ -34,6 +97,7 @@ public class MainTest {
 		//Emailのマッチング
 		testMatchEmail();
 	}
+
 
 
 	/**
