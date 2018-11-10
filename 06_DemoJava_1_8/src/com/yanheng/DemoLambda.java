@@ -24,7 +24,9 @@ public class DemoLambda {
 			}
 		});
 		//Lambda の実現
-		func1(() -> System.out.println("after java 1.8 lambda"));
+		func1(() -> {
+			System.out.println("after java 1.8 lambda");
+		});
 		func1(() -> {
 			System.out.println("after java 1.8 lambda");
 			System.out.println("多数行");
