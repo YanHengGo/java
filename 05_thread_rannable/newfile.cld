@@ -113,8 +113,8 @@
         </org.eclipse.ui.views.properties.PropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.yanheng.MyTaskResult</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <name>com.yanheng.ThreadSample.MyTaskResult</name>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
     </net.java.amateras.uml.classdiagram.model.InterfaceModel>
     <net.java.amateras.uml.classdiagram.model.InterfaceModel>
       <backgroundColor reference="../../../backgroundColor"/>
@@ -214,8 +214,8 @@
         </org.eclipse.ui.views.properties.PropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.yanheng.ITicketBox</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <name>com.yanheng.ThreadSample.ITicketBox</name>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
     </net.java.amateras.uml.classdiagram.model.InterfaceModel>
     <net.java.amateras.uml.classdiagram.model.ClassModel>
       <backgroundColor reference="../../../backgroundColor"/>
@@ -462,8 +462,8 @@
         </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.yanheng.TicketBox</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <name>com.yanheng.ThreadSample.TicketBox</name>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
       <isAbstract>false</isAbstract>
     </net.java.amateras.uml.classdiagram.model.ClassModel>
     <net.java.amateras.uml.classdiagram.model.ClassModel>
@@ -612,8 +612,8 @@
         </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.yanheng.Mythread</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <name>com.yanheng.ThreadSample.Mythread</name>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
       <isAbstract>false</isAbstract>
     </net.java.amateras.uml.classdiagram.model.ClassModel>
     <net.java.amateras.uml.classdiagram.model.ClassModel>
@@ -747,8 +747,8 @@
         </net.java.amateras.uml.properties.BooleanPropertyDescriptor>
       </propertyDescriptors>
       <stereoType></stereoType>
-      <name>com.yanheng.TaskNmae</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <name>com.yanheng.ThreadSample.TaskNmae</name>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
       <isAbstract>false</isAbstract>
     </net.java.amateras.uml.classdiagram.model.ClassModel>
     <net.java.amateras.uml.classdiagram.model.ClassModel>
@@ -788,7 +788,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$2" reference="../../../../net.java.amateras.uml.classdiagram.model.ClassModel/children/net.java.amateras.uml.classdiagram.model.AttributeModel[2]/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$2"/>
           <name>ticketBox</name>
           <type>TicketBox</type>
           <isStatic>true</isStatic>
@@ -809,7 +809,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4" reference="../../../../net.java.amateras.uml.classdiagram.model.InterfaceModel/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4"/>
           <name>taskDoneName</name>
           <type>String</type>
           <isStatic>true</isStatic>
@@ -830,7 +830,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4" reference="../../../../net.java.amateras.uml.classdiagram.model.InterfaceModel/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4" reference="../../net.java.amateras.uml.classdiagram.model.AttributeModel[2]/visibility"/>
           <name>myTaskResult</name>
           <type>MyTaskResult</type>
           <isStatic>true</isStatic>
@@ -851,7 +851,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4" reference="../../../../net.java.amateras.uml.classdiagram.model.InterfaceModel/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$4" reference="../../net.java.amateras.uml.classdiagram.model.AttributeModel[2]/visibility"/>
           <name>iTicketBox</name>
           <type>ITicketBox</type>
           <isStatic>true</isStatic>
@@ -872,7 +872,7 @@
               <null/>
             </java.beans.PropertyChangeSupport>
           </listeners>
-          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../../net.java.amateras.uml.classdiagram.model.ClassModel/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
+          <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1"/>
           <name>main</name>
           <type>void</type>
           <params>
@@ -931,7 +931,7 @@
       </propertyDescriptors>
       <stereoType></stereoType>
       <name>com.yanheng.ThreadSample</name>
-      <path>/05_thread_rannable/src/com/yanheng/ThreadSample.java</path>
+      <path>/99_justfortest/src/com/yanheng/ThreadSample.java</path>
       <isAbstract>false</isAbstract>
     </net.java.amateras.uml.classdiagram.model.ClassModel>
   </children>
