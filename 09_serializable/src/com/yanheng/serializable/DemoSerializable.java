@@ -50,6 +50,8 @@ public class DemoSerializable{
 		deserializable();
 	}
 
+	private static String filename = String.format("D:%s99_temp%sseri", File.separator,File.separator);
+
 	private static void deserializable() {
 		try {
 			ObjectInputStream oInputStream = new ObjectInputStream(new FileInputStream(filename));
@@ -63,10 +65,7 @@ public class DemoSerializable{
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-
 	}
-
-	private static String filename = String.format("D:%s99_temp%sseri", File.separator,File.separator);
 
 	private static void serializable (Person person ) {
 		try {
