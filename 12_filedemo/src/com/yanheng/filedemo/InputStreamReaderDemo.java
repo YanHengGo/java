@@ -7,6 +7,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.io.Writer;
 
 public class InputStreamReaderDemo {
 
@@ -22,7 +24,7 @@ public class InputStreamReaderDemo {
 
 	private static void demo1(File file) throws Exception{
 		OutputStream outputStream = new FileOutputStream(file);
-		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
+		Writer outputStreamWriter = new OutputStreamWriter(outputStream);
 		String str = "this is outputStreamWriter";
 		outputStreamWriter.write(str);
 		outputStreamWriter.close();
@@ -31,9 +33,11 @@ public class InputStreamReaderDemo {
 
 	private static void demo2(File file) throws Exception {
 		InputStream inputStream = new FileInputStream(file);
-		InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+		Reader inputStreamReader = new InputStreamReader(inputStream);
 		char[] ch = new char[1024];
 		int size= inputStreamReader.read(ch);
+		inputStreamReader.close();
+		inputStream.close();
 		System.out.println(new String(ch,0,size));
 	}
 
