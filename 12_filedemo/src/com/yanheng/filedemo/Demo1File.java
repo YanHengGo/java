@@ -12,7 +12,7 @@ import java.util.Date;
  * @author yanheng
  *
  */
-public class FileDemo {
+public class Demo1File {
 
 	/**
 	 * 注意点１、windowsとlinuxの互換性のため、File.separatorを利用する

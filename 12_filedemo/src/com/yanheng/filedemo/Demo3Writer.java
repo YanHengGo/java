@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.Reader;
 import java.io.Writer;
 
-public class WriterDemo {
+public class Demo3Writer {
 
 	public static void main(String[] args) throws Exception {
 		File file = new File("d:"+File.separator+"99_temp"+File.separator + "outputstream"+File.separator+"writedemo.txt");

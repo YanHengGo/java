@@ -10,7 +10,7 @@ import java.io.OutputStream;
  * @author yanheng
  *
  */
-public class MessyCodeDemo {
+public class Demo5MessyCode {
 
 	public static void main(String[] args) throws Exception{
 		//system properties output

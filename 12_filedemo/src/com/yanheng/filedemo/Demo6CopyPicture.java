@@ -13,7 +13,7 @@ import java.io.OutputStream;
  *
  * @author yanheng
  */
-public class CopyDemo {
+public class Demo6CopyPicture {
 
 	public static void main(String[] args) throws Exception{
 		File from_picture = new File("d:"+File.separator+"99_temp"+File.separator+"copydemo"+File.separator+"from_picture.png");

@@ -18,7 +18,7 @@ import java.io.Writer;
  *
  * 2018/11/18 4:46:36
  */
-public class InputStreamReaderDemo {
+public class Demo4OutputStreamWriter {
 
 	public static void main(String[] args) throws Exception{
 		// TODO 自動生成されたメソッド・スタブ

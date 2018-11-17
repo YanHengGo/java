@@ -16,7 +16,7 @@ import java.io.OutputStream;
  *
  * @author yanheng
  */
-public class OutputStreamDemo {
+public class Demo2OutputStream {
 
 	public static void main(String[] args) throws Exception {
 		File file = new File("d:"+File.separator+"99_temp"+File.separator + "outputstream"+File.separator+"demo.txt");
