@@ -3,7 +3,13 @@ package com.yanheng.filedemo;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-
+/**
+ *
+ * 文字化けテスト
+ *
+ * @author yanheng
+ *
+ */
 public class MessyCodeDemo {
 
 	public static void main(String[] args) throws Exception{

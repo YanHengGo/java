@@ -10,6 +10,14 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
 
+/**
+ * java.io.InputStreamReader;
+ * java.io.OutputStreamWriter;
+ *
+ * @author yanheng
+ *
+ * 2018/11/18 4:46:36
+ */
 public class InputStreamReaderDemo {
 
 	public static void main(String[] args) throws Exception{
@@ -22,6 +30,12 @@ public class InputStreamReaderDemo {
 		demo2(file);
 	}
 
+	/**
+	 * OutputStreamWriter
+	 *
+	 * @param file
+	 * @throws Exception
+	 */
 	private static void demo1(File file) throws Exception{
 		OutputStream outputStream = new FileOutputStream(file);
 		Writer outputStreamWriter = new OutputStreamWriter(outputStream);
@@ -31,6 +45,11 @@ public class InputStreamReaderDemo {
 		outputStream.close();
 	}
 
+	/**
+	 * InputStreamReader
+	 * @param file
+	 * @throws Exception
+	 */
 	private static void demo2(File file) throws Exception {
 		InputStream inputStream = new FileInputStream(file);
 		Reader inputStreamReader = new InputStreamReader(inputStream);

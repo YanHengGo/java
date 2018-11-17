@@ -1,7 +1,9 @@
 package com.yanheng.filedemo;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.Reader;
 import java.io.Writer;
 
 public class WriterDemo {
@@ -11,15 +13,22 @@ public class WriterDemo {
 		if(!file.getParentFile().exists()) {
 			file.getParentFile().mkdirs();
 		}
-		demo1(file);
+		demoFileWriter(file);
+		demoFileReader(file);
 	}
 
-	private static void demo1(File file) throws Exception{
+	private static void demoFileWriter(File file) throws Exception{
 		Writer writer = new FileWriter(file);
 		String string = "this is writer demo  \r\n";
 		writer.write(string);
 		writer.close();
-
+	}
+	private static void demoFileReader(File file) throws Exception {
+		Reader reader = new FileReader(file);
+		char [] ch = new char[1024];
+		int len = reader.read(ch);
+		reader.close();
+		System.out.println(new String(ch,0,len));
 	}
 
 }

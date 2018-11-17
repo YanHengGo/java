@@ -6,11 +6,17 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * ファイル操作のデモ
+ *
+ * @author yanheng
+ *
+ */
 public class FileDemo {
 
 	/**
-	 * 問題１、windowsとlinuxの互換性のため、File.separatorを利用する
-	 * 問題２、File作成は遅延がある
+	 * 注意点１、windowsとlinuxの互換性のため、File.separatorを利用する
+	 * 注意点２、File作成は遅延がある
 	 *
 	 *
 	 */

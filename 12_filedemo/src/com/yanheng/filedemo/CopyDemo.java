@@ -6,6 +6,13 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+/**
+ *
+ * FileoutputStream と FileInputStreamを利用して、
+ * 既存画像ファイルをコピーする
+ *
+ * @author yanheng
+ */
 public class CopyDemo {
 
 	public static void main(String[] args) throws Exception{
