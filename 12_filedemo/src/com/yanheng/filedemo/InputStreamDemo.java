@@ -19,11 +19,8 @@ public class InputStreamDemo {
 		int temp = 0 , index = 0;
 		byte [] bs = new byte[1024];
 		InputStream inputStream = new FileInputStream(file);
-		while(temp!=-1) {
-			temp = inputStream.read();
-			if(temp!=-1) {
-				bs[index++]=(byte)temp;
-			}
+		while((temp = inputStream.read())!=-1) {
+			bs[index++]=(byte)temp;
 		}
 		System.out.println(new String(bs));
 	}
