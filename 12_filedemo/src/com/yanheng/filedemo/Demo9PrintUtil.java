@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.PrintStream;
 
 /**
  * print util
@@ -16,31 +17,31 @@ class PrintUtil {
 	public PrintUtil(OutputStream outputStream) {
 		this.outputStream = outputStream;
 	}
-	public void Print(String string) {
+	public void print(String string) {
 		try {
 			outputStream.write(string.getBytes());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	public void Print(int i) {
-		this.Print(String.valueOf(i));
+	public void print(int i) {
+		this.print(String.valueOf(i));
 	}
-	public void Print(double d) {
-		this.Print(String.valueOf(d));
+	public void print(double d) {
+		this.print(String.valueOf(d));
 	}
-	public void Println(String string) {
+	public void println(String string) {
 		try {
 			outputStream.write( (string + "\n").getBytes() );
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	public void Println(int i) {
-		Println(String.valueOf(i));
+	public void println(int i) {
+		println(String.valueOf(i));
 	}
-	public void Println(double d) {
-		Println(String.valueOf(d));
+	public void println(double d) {
+		println(String.valueOf(d));
 	}
 	public void close() {
 		try {
@@ -54,13 +55,31 @@ class PrintUtil {
 public class Demo9PrintUtil {
 
 	public static void main(String[] args) throws Exception {
-		String filePath = "d:"+File.separator + "99_temp"+File.separator+"outputstream"+File.separator+"printutil.txt";
+		String printutil = "d:"+File.separator + "99_temp"+File.separator+"outputstream"+File.separator+"printutil.txt";
+
+		String printstream = "d:"+File.separator + "99_temp"+File.separator+"outputstream"+File.separator+"printstream.txt";
+
+		demoPrintStream(printstream);
+		demoPrintUtil(printutil);
+	}
+
+	private static void demoPrintUtil(String filePath) throws Exception{
 		PrintUtil printUtil = new PrintUtil(new FileOutputStream(new File(filePath)));
-		printUtil.Println("hello world shop !");
-		printUtil.Print("banana : ");
-		printUtil.Println(1.3);
-		printUtil.Print("apple : ");
-		printUtil.Println(1.8);
+		printUtil.println("hello world shop !");
+		printUtil.print("banana : ");
+		printUtil.println(1.3);
+		printUtil.print("apple : ");
+		printUtil.print(1.8);
+		printUtil.close();
+	}
+
+	private static void demoPrintStream(String filePath) throws Exception {
+		PrintStream printUtil = new PrintStream(new FileOutputStream(new File(filePath)));
+		printUtil.println("hello world shop !");
+		printUtil.print("banana : ");
+		printUtil.println(1.3);
+		printUtil.print("apple : ");
+		printUtil.println(1.8);
 		printUtil.close();
 	}
 
