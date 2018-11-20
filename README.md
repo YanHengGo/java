@@ -1,8 +1,20 @@
-# java
+01_stackoverflowerror
+  test heap size
+  test stack size
+02_concurrency
+  test multi thread
 
-java.lang.StackOverflowErrorを発生したら、
+03_hashmap
 
-一般は再帰は無限になったためでした。
+04_hashcode
 
-そのほか、引数大きいすぎなども可能性ある。
+05_thread_rannable
 
+06_DemoJava_1_8
+07_RegularExpression
+  正規表現
+12_filedemo
+  ファイル操作、入力操作
+  
+  
+  
